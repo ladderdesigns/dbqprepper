@@ -1,0 +1,20 @@
+{
+     "ap-euro": {
+        "2018": "https://apcentral.collegeboard.org/pdf/ap18-frq-european-history.pdf",
+        "2017": "https://apcentral.collegeboard.org/pdf/ap-european-history-frq-2017.pdf",
+        "2016": "https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap16_frq_european_history.pdf",
+        "2015": "https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap15_frq_european_history.pdf"
+    },
+    "ap-world": {
+        "2018": "https://apcentral.collegeboard.org/pdf/ap18-frq-world-history.pdf",
+        "2017": "https://apcentral.collegeboard.org/pdf/ap-world-history-frq-2017.pdf",
+        "2016": "https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap16_frq_world_history.pdf",
+        "2015": "https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap15_frq_world_history.pdf"
+    },
+    "apush": {
+        "2018": "https://secure-media.collegeboard.org/apc/ap18-frq-us-history.pdf",
+        "2017": "https://apcentral.collegeboard.org/pdf/ap-us-history-frq-2017.pdf",
+        "2016": "https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap16_frq_us_history.pdf",
+        "2015": "https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap15_frq_us_history.pdf"
+    }
+}
