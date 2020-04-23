@@ -13,19 +13,19 @@ function IndexPage() {
   });
 
   return (
-    <div className="flex flex-col w-screen bg-gray-300">
+    <div className="flex flex-col w-screen h-auto bg-gray-400">
       <Navbar />
-      <div className="self-center max-w-sm my-4 text-center rounded shadow-lg md:max-w-3xl">
+      <div className="self-center w-3/4 px-8 my-4 text-center bg-gray-200 rounded-lg shadow-lg">
         <div className="px-6 py-4">
-          <p className="mb-2 text-xl font-bold md:text-3xl">
+          <p className="mb-2 text-xl font-bold md:text-2xl">
             2020 PRACTICE DBQ FREE-RESPONSE QUESTIONS{" "}
           </p>
           <p className="mb-2 text-lg "> Total Time—45 minutes</p>
           <p className="text-base text-gray-700">
             <span className="font-bold"> Directions:</span> First select your
             subject, then select the year of the prompt you want, then click the
-            generate button. You will be taken to a new page with your prompt. A
-            clock will start as soon as you enter.
+            generate button. Your prompt will be generated, and a clock will
+            start automatically.
           </p>
         </div>
         <div className="flex flex-col justify-between px-6 py-4">
@@ -93,7 +93,9 @@ function IndexPage() {
                 Generate Prompt
               </button>
             )}
-            <div id="input" className="self-center">{generate && <Input link={link} />}</div>
+            <div id="input" className="self-center">
+              {generate && <Input link={link} />}
+            </div>
           </div>
         </div>
       </div>
