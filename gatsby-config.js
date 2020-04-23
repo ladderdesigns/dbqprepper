@@ -24,6 +24,13 @@ module.exports = {
         icon: `src/images/tailwind-icon.png`,
       },
     },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/prompts.json`,
+      },
+    },
     {
       resolve: `gatsby-plugin-postcss`,
       options: {

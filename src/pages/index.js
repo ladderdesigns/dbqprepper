@@ -1,24 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/navbar";
+import Input from "../components/input";
+import prompts from "../data/prompts.json";
 
 function IndexPage() {
-  const [courses] = React.useState([
-    { label: "AP Euro", value: "ap-euro" },
-    { label: "AP World", value: "ap-world" },
-    { label: "APUSH", value: "apush" },
-  ]);
-  const [course, setCourse] = React.useState();
-  const [years] = React.useState([
-    { label: "2018", value: "2018" },
-    { label: "2017", value: "2017" },
-    { label: "2016", value: "2016" },
-    { label: "2015", value: "2015" },
-  ]);
-  const [year, setYear] = React.useState();
+  const [course, setCourse] = useState();
+  const [link, setLink] = useState();
+
+  useEffect(() => {
+    console.log(course, link)
+  });
+
   return (
-    <div className="flex flex-col w-screen h-screen bg-gray-300">
+    <div className="flex flex-col w-screen bg-gray-300">
       <Navbar />
-      <div className="self-center max-w-sm overflow-hidden text-center rounded shadow-lg md:max-w-lg">
+      <div className="self-center max-w-sm my-4 text-center rounded shadow-lg md:max-w-lg">
         <div className="px-6 py-4">
           <p className="mb-2 text-xl font-bold md:text-3xl">
             2020 PRACTICE DBQ FREE-RESPONSE QUESTIONS{" "}
@@ -34,11 +30,10 @@ function IndexPage() {
         </div>
         <div className="flex flex-col justify-between px-6 py-4">
           <div className="relative inline-block mb-4">
-            <select className="block w-full px-4 py-2 text-sm leading-tight text-center bg-white border border-gray-400 rounded-full shadow appearance-none hover:border-gray-500 focus:outline-none focus:shadow-outline" value={course} onChange={e => setCourse(e.currentTarget.value)}>
-              {courses.map(({ label, value }) => (
-                <option key={value} value={value}>
-                  {label}
-                </option>
+            <select className="block w-full px-4 py-2 pr-8 text-sm leading-tight text-center bg-white border border-0 border-gray-400 rounded-full shadow appearance-none hover:border-gray-500 focus:outline-none focus:shadow-outline" value={course} onChange={e => setCourse(e.currentTarget.value)}>
+            <option> Select Subject...</option>
+              {prompts.map(({ name }) => (
+                <option key={name} value={name}> {name} </option>
               ))}
             </select>
             <div className="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pointer-events-none">
@@ -52,11 +47,12 @@ function IndexPage() {
             </div>
           </div>
           <div className="relative inline-block mb-4 w-36">
-            <select className="block w-full px-4 py-2 pr-8 text-sm leading-tight text-center bg-white border border-gray-400 rounded-full shadow appearance-none hover:border-gray-500 focus:outline-none focus:shadow-outline" value={year} onChange={e => setYear(e.currentTarget.value)}>
-            {years.map(({ label, value }) => (
-                <option key={value} value={value}>
-                  {label}
-                </option>
+            <select className="block w-full px-4 py-2 pr-8 text-sm leading-tight text-center bg-white border border-gray-400 rounded-full shadow appearance-none hover:border-gray-500 focus:outline-none focus:shadow-outline" value={link} onChange={e => setLink(e.currentTarget.value)}>
+            <option> Select Year...</option>
+              {prompts.filter(obj => obj.name === course).map(({ pdfs }) => (
+                pdfs.map(({ year, link }) => (
+                  <option key={year} value={link}> {year} </option>
+                  ))
               ))}
             </select>
             <div className="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pointer-events-none">
@@ -69,9 +65,10 @@ function IndexPage() {
               </svg>
             </div>
           </div>
-          <button className="px-4 py-2 text-sm font-bold leading-tight bg-white border border-gray-400 rounded-full shadow appearance-none md:block hover:border-gray-500 focus:outline-none focus:shadow-outline">
+          <button className="px-4 py-2 mb-4 text-sm font-bold leading-tight bg-white border border-gray-400 rounded-full shadow appearance-none md:block hover:border-gray-500 focus:outline-none focus:shadow-outline">
             Generate Prompt
           </button>
+          <Input></Input>
         </div>
       </div>
     </div>

@@ -1,0 +1,68 @@
+[
+  {
+    "name": "AP Euro",
+    "pdfs": [
+      {
+        "year": 2018,
+        "link": "https://apcentral.collegeboard.org/pdf/ap18-frq-european-history.pdf"
+      },
+      {
+        "year": 2017,
+        "link": "https://apcentral.collegeboard.org/pdf/ap-european-history-frq-2017.pdf"
+      },
+
+      {
+        "year": 2016,
+        "link": "https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap16_frq_european_history.pdf"
+      },
+      {
+        "year": 2015,
+        "link": "https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap15_frq_european_history.pdf"
+      }
+    ]
+  },
+  {
+    "name": "APUSH",
+    "pdfs": [
+      {
+        "year": 2018,
+        "link": "https://secure-media.collegeboard.org/apc/ap18-frq-us-history.pdf"
+      },
+      {
+        "year": 2017,
+        "link": "https://apcentral.collegeboard.org/pdf/ap-us-history-frq-2017.pdf"
+      },
+
+      {
+        "year": 2016,
+        "link": "https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap16_frq_us_history.pdf"
+      },
+      {
+        "year": 2015,
+        "link": "https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap15_frq_us_history.pdf"
+      }
+    ]
+  },
+  {
+    "name": "AP World",
+    "pdfs": [
+      {
+        "year": 2018,
+        "link": "https://apcentral.collegeboard.org/pdf/ap18-frq-world-history.pdf"
+      },
+      {
+        "year": 2017,
+        "link": "https://apcentral.collegeboard.org/pdf/ap-world-history-frq-2017.pdf"
+      },
+
+      {
+        "year": 2016,
+        "link": "https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap16_frq_world_history.pdf"
+      },
+      {
+        "year": 2015,
+        "link": "https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap15_frq_world_history.pdf"
+      }
+    ]
+  }
+]
