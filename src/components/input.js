@@ -1,21 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Document, Page } from 'react-pdf'
 
-function Input({ url }) {
+import PDFViewer from 'pdf-viewer-reactjs'
+
+
+function Input({ link }) {
   return (
     <div>
-      <div className="mb-2 text-center">
-      <Document file={url}><Page pageNumber={7}/> <Page pageNumber={8}/> <Page pageNumber={9}/> <Page pageNumber={10}/> </Document>
+      <div className="text-center">
+       <PDFViewer css={"height: auto"} hideNavbar={true} page={7}
+            document={{
+                url: link ,
+            }}
+        />
       </div>
-
       <textarea className="w-full h-64 p-6 rounded-lg"></textarea>
     </div>
   );
 }
 
 Input.propTypes = {
-  url: PropTypes.string,
+    link: PropTypes.string,
+    
 };
 
 Input.defaultProps = {};
