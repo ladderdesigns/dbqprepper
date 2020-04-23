@@ -14,7 +14,7 @@ function IndexPage() {
   return (
     <div className="flex flex-col w-screen bg-gray-300">
       <Navbar />
-      <div className="self-center max-w-sm my-4 text-center rounded shadow-lg md:max-w-lg">
+      <div className="self-center max-w-sm my-4 text-center rounded shadow-lg md:max-w-3xl">
         <div className="px-6 py-4">
           <p className="mb-2 text-xl font-bold md:text-3xl">
             2020 PRACTICE DBQ FREE-RESPONSE QUESTIONS{" "}
@@ -65,10 +65,14 @@ function IndexPage() {
               </svg>
             </div>
           </div>
+          <div className="flex flex-col justify-center w-full">
+
+          
           <button className="px-4 py-2 mb-4 text-sm font-bold leading-tight bg-white border border-gray-400 rounded-full shadow appearance-none md:block hover:border-gray-500 focus:outline-none focus:shadow-outline">
             Generate Prompt
           </button>
-          <Input></Input>
+          <Input url={link}></Input>
+          </div>
         </div>
       </div>
     </div>
