@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../components/navbar";
 import prompts from "../data/prompts.json";
 import Input from "../components/input";
+import Timer from "react-compound-timer";
 
 function IndexPage() {
   const [course, setCourse] = useState();
@@ -94,6 +95,21 @@ function IndexPage() {
               </button>
             )}
             <div id="input" className="self-center">
+              {generate && (
+                <div className="mb-4 font-bold">
+                  <Timer initialTime={2710000} direction="backward">
+                    {() => (
+                      <React.Fragment>
+                  
+                        <Timer.Hours /> hours {" "}
+                        <Timer.Minutes /> minutes {" "}
+                        <Timer.Seconds /> seconds {" "}
+                    
+                      </React.Fragment>
+                    )}
+                  </Timer>
+                </div>
+              )}
               {generate && <Input link={link} />}
             </div>
           </div>
