@@ -16,11 +16,11 @@ function IndexPage() {
     <div className="flex flex-col w-screen h-auto min-h-screen pb-10 font-sans bg-gray-400">
       <Navbar />
       <div className="self-center w-3/4 px-8 my-4 text-center bg-gray-200 rounded-lg shadow-lg">
-        <div className="px-6 py-4">
-          <p className="mb-2 text-xl font-extrabold md:text-2xl">
+        <div className="px-20 pt-8">
+          <p className="mb-3 text-xl font-extrabold md:text-2xl">
             2020 PRACTICE DBQ FREE-RESPONSE QUESTIONS{" "}
           </p>
-          <p className="mb-2 text-lg "> Total Time—50 minutes</p>
+          <p className="mb-3 text-lg "> Total Time—50 minutes</p>
           <p className="text-base text-gray-700">
             <span className="font-bold"> Directions:</span> First select your
             subject, then select the year of the prompt you want, then click the
@@ -32,7 +32,7 @@ function IndexPage() {
         <div className="flex flex-col items-center justify-between px-16 py-4">
           <div>
             <div className="flex-row ">
-              <div className="relative inline-block w-48 mb-4 mr-4">
+              <div className="relative inline-block w-48 mb-4 md:mr-4">
                 <select
                   className="w-full px-4 py-2 pr-8 text-sm leading-tight text-center bg-white border border-0 border-gray-400 rounded-full shadow appearance-none hover:border-gray-500 focus:outline-none focus:shadow-outline"
                   value={course}
@@ -57,7 +57,7 @@ function IndexPage() {
                 </div>
               </div>
               {course && (
-                <div className="relative inline-block w-48 mb-4 ml-4">
+                <div className="relative inline-block w-48 mb-4 md:ml-4">
                   <select
                     className="w-full px-4 py-2 pr-8 text-sm leading-tight text-center bg-white border border-gray-400 rounded-full shadow appearance-none hover:border-gray-500 focus:outline-none focus:shadow-outline"
                     value={link}
@@ -90,7 +90,7 @@ function IndexPage() {
             </div>
             {link && (
               <button
-                className="self-center w-full px-4 py-2 mb-4 text-sm font-bold leading-tight text-white bg-black border border-gray-400 rounded-full shadow appearance-none md:block hover:border-gray-500 focus:outline-none focus:shadow-outline"
+                className="self-center w-48 px-4 py-2 mb-4 text-sm font-bold leading-tight text-white bg-black border border-gray-400 rounded-full shadow appearance-none md:w-full md:block hover:border-gray-500 focus:outline-none focus:shadow-outline"
                 onClick={() => setGenerate(true)}
               >
                 Generate Prompt
