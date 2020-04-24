@@ -10,10 +10,10 @@ function InputArea({ link }) {
   return (
     <div className="flex flex-col w-full h-full pb-8 mx-2 ">
       <div className="mb-4 font-semibold">
-        <Timer initialTime={3015000} direction="backward">
+         <Timer initialTime={3015000} direction="backward">
           {() => (
             <React.Fragment>
-              <Timer.Hours /> hours <Timer.Minutes /> minutes <Timer.Seconds />{" "}
+               <Timer.Minutes /> minutes <Timer.Seconds />{" "}
               seconds{" "}
             </React.Fragment>
           )}
