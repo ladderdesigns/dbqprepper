@@ -31,7 +31,7 @@ function IndexPage() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-between px-16 py-4">
+        <div className="flex flex-col items-center justify-between px-4 py-4 md:px-6 lg:px-16">
           {!generate && (
             <div>
               <div className="flex-row ">
