@@ -14,24 +14,21 @@ function IndexPage() {
 
   return (
     <div className="flex flex-col w-screen h-auto min-h-screen pb-10 font-sans bg-gray-400">
-      <Navbar />
-      <div className="self-center w-3/4 px-8 text-center bg-gray-200 rounded-lg shadow-lg">
-        <div className="px-24 pt-8">
+      <Navbar/>
+      <div className="self-center w-3/4 px-8 mt-10 text-center bg-gray-200 rounded-lg shadow-lg md:px-24">
+        <div className="pt-8 ">
           <p className="mb-3 text-xl font-extrabold md:text-2xl">
             2020 PRACTICE DBQ FREE-RESPONSE QUESTIONS{" "}
           </p>
-          {!generate &&
-          <div>
+
           <p className="mb-3 text-lg "> Total Time—50 minutes</p>
-          
+
           <p className="text-base text-gray-700">
             <span className="font-bold"> Directions:</span> First select your
             subject, then select the year of the prompt you want, then click the
             generate button. Your prompt will be generated, and a clock will
             start automatically.
-          </p> 
-            </div>
-}
+          </p>
         </div>
 
         <div className="flex flex-col items-center justify-between px-16 py-4">

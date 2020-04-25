@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import { Icon } from "@iconify/react";
 import koFi from "@iconify/icons-simple-icons/ko-fi";
 
 const Navbar = () => {
-  const [isOpen] = useState(false);
-
   return (
     <nav className="bg-transparent">
-      <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="px-2 mx-auto font-sans max-w-7xl sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* <!-- Mobile menu button--> */}
@@ -61,75 +59,21 @@ const Navbar = () => {
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            
-           
-
-        
-            <div className="relative ml-3">
-              
-              <a href="https://ko-fi.com/jseanpatel">
-              <Icon height="30px" icon={koFi} />
-            </a>
-            
-             
-              <div
-                className={
-                  (isOpen ? "block" : "hidden") +
-                  " origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg"
-                }
-              >
-                <div className="py-1 bg-white rounded-md shadow-xs">
-                  <Link
-                    to="/"
-                    className="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                  >
-                    Your Profile
-                  </Link>
-                  <Link
-                    to="/"
-                    className="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                  >
-                    Settings
-                  </Link>
-                  <Link
-                    to="/"
-                    className="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                  >
-                    Sign out
-                  </Link>
-                </div>
+            <div className="relative ">
+              <div className="flex flex-row items-center ">
+                <Link className="mr-12 text-xl font-semibold text-black" to="/about">
+                  {" "}
+                  About{" "}
+                </Link>
+                <a target="_blank" rel="noopener noreferrer" href="https://ko-fi.com/jseanpatel">
+                  <p className="mr-12 text-xl font-semibold text-black"> Donate </p>
+                </a>
+                <a className="mr-6" target="_blank" rel="noopener noreferrer" href="https://ko-fi.com/jseanpatel">
+                  <Icon height="30px" icon={koFi}></Icon>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="hidden sm:hidden">
-        <div className="px-2 pt-2 pb-3">
-          <Link
-            to="/"
-            className="block px-3 py-2 text-base font-medium text-white transition duration-150 ease-in-out bg-gray-900 rounded-md focus:outline-none focus:text-white focus:bg-gray-700"
-          >
-            Dashboard
-          </Link>
-          <Link
-            to="/"
-            className="block px-3 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-          >
-            Team
-          </Link>
-          <Link
-            to="/"
-            className="block px-3 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-          >
-            Projects
-          </Link>
-          <Link
-            to="/"
-            className="block px-3 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-          >
-            Calendar
-          </Link>
         </div>
       </div>
     </nav>
