@@ -21,7 +21,7 @@ function InputArea({ link }) {
       </div>
 
       <embed className="h-screen mb-10 w-100" height src={link}></embed>
-      <div className="w-full h-64 overflow-scroll">
+      <div className="w-full h-64 overflow-scroll min-h-64">
       <Editor
         editorStyle={{"background-color": "white", "margin-top": "1rem", "padding-top": "0rem !important", "padding-bot": "0rem", "padding-left": "1rem", "padding-right": "1rem"}}
         toolbarClassName="toolbarClassName"
