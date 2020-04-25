@@ -33,7 +33,7 @@ function InputArea({ link }) {
       <div className="w-full h-64 overflow-scroll min-h-64">
       {editorState &&
       <Editor
-        editorStyle={{"background-color": "white", "margin-top": "1rem", "padding-top": "0rem !important", "padding-bot": "0rem", "padding-left": "1rem", "padding-right": "1rem"}}
+        editorStyle={{"background-color": "white", "margin-top": "1.25rem", "padding-top": "0rem !important", "padding-bot": "0rem", "padding-left": "1rem", "padding-right": "1rem", "height": "12rem"}}
         toolbarClassName="toolbarClassName"
         wrapperClassName="wrapperClassName"
         editorClassName="editorClassName"

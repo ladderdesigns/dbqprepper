@@ -15,7 +15,7 @@ function IndexPage() {
   return (
     <div className="flex flex-col w-screen h-auto min-h-screen pb-10 font-sans bg-gray-400">
       <Navbar/>
-      <div className="self-center w-3/4 px-8 mt-10 text-center bg-gray-200 rounded-lg shadow-lg md:px-24">
+      <div className="self-center w-3/4 px-8 mt-16 text-center bg-gray-200 rounded-lg shadow-lg md:px-24">
         <div className="pt-8 ">
           <p className="mb-3 text-xl font-extrabold md:text-2xl">
             2020 PRACTICE DBQ FREE-RESPONSE QUESTIONS{" "}
