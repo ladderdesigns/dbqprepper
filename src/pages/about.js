@@ -1,37 +1,25 @@
 import React from "react";
-
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import dogIllustration from "../images/dog-illustration.svg";
+import Navbar from "../components/navbar"
 
 function AboutPage() {
   return (
-    <Layout>
-      <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="About"
-      />
+    
+      <div className="flex flex-col w-screen h-auto min-h-screen pb-10 font-sans bg-gray-400">
+      <Navbar />
+      <div className="self-center w-3/4 px-8 mt-16 text-center bg-gray-200 rounded-lg shadow-lg md:px-24">
+        <div className="py-8 ">
+          <p className="mb-3 text-xl font-extrabold md:text-2xl">
+            DBQ Prepper is dedicated to Nicholas Patel.{" "}
+          </p>
 
-      <section className="flex flex-col items-center md:flex-row">
-        <div className="md:w-2/3 md:mr-8">
-          <blockquote className="pl-4 font-serif leading-loose text-justify border-l-4 border-gray-900">
-            The point is... to live one&apos;s life in the full complexity of
-            what one is, which is something much darker, more contradictory,
-            more of a maelstrom of impulses and passions, of cruelty, ecstacy,
-            and madness, than is apparent to the civilized being who glides on
-            the surface and fits smoothly into the world.
-          </blockquote>
+         
 
-          <cite className="block mt-4 text-xs font-bold text-right uppercase">
-            – Thomas Nagel
-          </cite>
+          <p className="text-base text-gray-700">
+            {"After my younger brother asked me about new ways he could prepare for his AP European History exam, I decided to create DBQ Prepper as a way for students to better aclimate to the new Collegeboard testing format. Keep working hard little brother - you'll go far."}
+          </p>
         </div>
-
-        <figure className="w-2/3 md:w-1/3">
-          <img alt="A dog relaxing" src={dogIllustration} />
-        </figure>
-      </section>
-    </Layout>
+        </div>
+    </div>
   );
 }
 
