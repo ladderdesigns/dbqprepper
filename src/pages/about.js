@@ -15,7 +15,7 @@ function AboutPage() {
          
 
           <p className="text-base text-gray-700">
-            {"After my younger brother asked me about new ways he could prepare for his AP European History exam, I decided to create DBQ Prepper as a way for students to better aclimate to new Collegeboard testing. Keep working hard little brother - you'll go far."}
+            {"After my younger brother asked me about new ways he could prepare for his AP European History exam, I decided to create DBQ Prepper as a way for students to better aclimate to new Collegeboard testing format. Keep working hard little brother - you'll go far."}
           </p>
         </div>
         </div>

@@ -11,9 +11,11 @@ let Editor = () => <></>;
 
 function InputArea({ link }) {
   const [editorState, setEditorState] = useState();
+  const [editorInput, setEditorInput] = useState();
   useEffect(() => {
     Editor = require("react-draft-wysiwyg").Editor;
     setEditorState(true)
+    console.log(editorInput)
   },[]);
   return (
     <div className="flex flex-col w-full h-full pb-8 mx-2 ">
@@ -30,13 +32,14 @@ function InputArea({ link }) {
           )}
         </Timer>
       </div>
-      <div className="w-full h-64 overflow-scroll min-h-64">
+      <div className="w-full h-64 overflow-hidden min-h-64">
       {editorState &&
       <Editor
-        editorStyle={{"background-color": "white", "margin-top": "1.25rem", "padding-top": "0rem !important", "padding-bot": "0rem", "padding-left": "1rem", "padding-right": "1rem", "height": "12rem"}}
+        editorStyle={{"background-color": "white", "margin-top": "1.25rem", "padding-top": "0rem !important", "padding-bot": "0rem", "padding-left": "1rem", "padding-right": "1rem", "height": "10.5rem", "overflow": "scroll"}}
         toolbarClassName="toolbarClassName"
         wrapperClassName="wrapperClassName"
         editorClassName="editorClassName"
+        onContentStateChange={setEditorInput}
         
       />
 }
