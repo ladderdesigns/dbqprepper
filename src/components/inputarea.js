@@ -25,7 +25,7 @@ function InputArea({ link }) {
   }
 
   function checkMobile() {
-    if (window.screen.width < 600) {
+    if (window.screen.width < 900) {
       return true
     }
     return false
