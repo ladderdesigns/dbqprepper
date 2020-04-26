@@ -8,14 +8,14 @@ function AboutPage() {
       <Navbar />
       <div className="self-center w-3/4 px-8 mt-16 text-center bg-gray-200 rounded-lg shadow-lg md:px-24">
         <div className="py-8 ">
-          <p className="mb-3 text-xl font-extrabold md:text-2xl">
-            DBQ Prepper is dedicated to Nicholas Patel.{" "}
-          </p>
+          
 
          
-
-          <p className="text-base text-gray-700">
-            {"After my younger brother asked me about new ways he could prepare for his AP European History exam, I decided to create DBQ Prepper as a way for students to better aclimate to the new Collegeboard testing format. Keep working hard little brother - you'll go far."}
+        <p className="mb-3 text-xl font-extrabold md:text-2xl">
+            A little bit about me...{" "}
+          </p>
+          <p className="text-lg">
+            <span className="font-bold"> Hi there! </span> {" "} My name is Jacob Patel. I am an undergraduate at the University of California, Berkeley studying Computer Science and Education. I decided to create DBQ Prepper after my younger brother asked me for help in preparing for his AP European History exam. DBQ Prepper was intended to help students acclimate to the new Collegeboard testing procedures, in regards to Covid-19. I wish you all the best on test day! 
           </p>
         </div>
         </div>

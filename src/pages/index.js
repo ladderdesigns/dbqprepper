@@ -60,7 +60,7 @@ function IndexPage() {
                   </div>
                 </div>
                 {course && (
-                  <div className="relative inline-block w-48 mb-4 md:ml-4">
+                  <div className="relative inline-block w-48 mb-4 lg:ml-4">
                     <select
                       className="w-full px-4 py-2 pr-8 text-sm leading-tight text-center bg-white border border-gray-400 rounded-full shadow appearance-none hover:border-gray-500 focus:outline-none focus:shadow-outline"
                       value={link}
