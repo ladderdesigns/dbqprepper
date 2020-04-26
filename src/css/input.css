@@ -1,8 +1,0 @@
-.wrapper > div > div > div > div {
-    height: auto !important;
-}
-
-.wrapper > div > div {
-    /* display: block !important; */
-    background-color: white;
-}
