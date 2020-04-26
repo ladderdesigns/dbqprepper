@@ -20,6 +20,13 @@ function InputArea({ link }) {
     }
   }
 
+  function download(text, name, type) {
+    var a = document.getElementById("downloadEditor");
+    var file = new Blob([text], {type: type});
+    a.href = URL.createObjectURL(file);
+    a.download = name;
+  }
+
   useEffect(() => {
     Editor = require("react-draft-wysiwyg").Editor;
     setEditorState(true);
@@ -30,7 +37,7 @@ function InputArea({ link }) {
     <div className="flex flex-col w-full h-full pb-8 mx-2 ">
       <embed className="h-screen mb-4 " height src={link}></embed>
       <div className="mb-4 font-semibold">
-        <Timer initialTime={3000000} direction="backward">
+        <Timer initialTime={3010000} direction="backward">
           {() => (
             <React.Fragment>
               <Timer.Minutes /> minutes <Timer.Seconds /> seconds{" "}
@@ -44,13 +51,13 @@ function InputArea({ link }) {
             editorStyle={{
               "background-color": "white",
               "margin-top": "1.25rem",
-              "padding-top": "0rem !important",
+              "padding-top": "0rem",
               "padding-bot": "0rem",
               "padding-left": "1rem",
               "padding-right": "1rem",
               "height": "10rem",
               "overflow": "scroll",
-              "min-height": "4rem"
+              "min-height": "5rem"
             }}
             toolbarClassName="toolbarClassName"
             wrapperClassName="wrapperClassName"
@@ -60,10 +67,14 @@ function InputArea({ link }) {
           />
         )}
       </div>
-      <div className="flex self-center pt-4 md:self-end">
-        <button className="w-48 px-4 py-2 mb-4 text-sm font-bold leading-tight text-white bg-black border border-gray-400 rounded-full shadow appearance-none hover:border-gray-500 focus:outline-none focus:shadow-outline">
+      <div className="flex self-center pt-2 sm:self-end">
+        <button  className="w-auto px-4 py-2 mb-4 text-sm font-bold leading-tight text-white bg-black border border-gray-400 rounded-full shadow appearance-none md:px-6 md:text-md hover:border-gray-500 focus:outline-none focus:shadow-outline" onClick={() => download(editorInput.blocks[0].text, 'dbqprepper.txt', 'text/plain')}>
+        <a  id="downloadEditor">
           Download Response
+          </a>
         </button>
+      
+
       </div>
     </div>
   );

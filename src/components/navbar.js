@@ -61,16 +61,16 @@ const Navbar = () => {
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <div className="relative ">
               <div className="flex flex-row items-center ">
-                <Link className="mr-6 text-lg font-semibold text-black md:text-xl sm:mr-12" to="/">
+                <Link className="mr-6 font-semibold text-black text-md md:text-xl sm:mr-12" to="/">
                   {" "}
                   Home{" "}
                 </Link>
-                <Link className="mr-6 text-lg font-semibold text-black md:text-xl sm:mr-12" to="/about">
+                <Link className="mr-6 font-semibold text-black text-md md:text-xl sm:mr-12" to="/about">
                   {" "}
                   About{" "}
                 </Link>
                 <a target="_blank" rel="noopener noreferrer" href="https://ko-fi.com/jseanpatel">
-                  <p className="mr-6 text-lg font-semibold text-black md:text-xl sm:mr-12"> Donate </p>
+                  <p className="mr-4 font-semibold text-black sm:mr-2 text-md md:text-xl"> Donate </p>
                 </a>
                 <a className="mr-2 sm:mr-4" target="_blank" rel="noopener noreferrer" href="https://ko-fi.com/jseanpatel">
                   <Icon height="30px" icon={koFi}></Icon>
