@@ -3,6 +3,14 @@ import { Link } from "gatsby";
 import { Icon } from "@iconify/react";
 import koFi from "@iconify/icons-simple-icons/ko-fi";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
+library.add(faNewspaper);
+
+
+
+
 const Navbar = () => {
   return (
     <nav className="bg-transparent">
@@ -44,15 +52,16 @@ const Navbar = () => {
             </button>
           </div>
           <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
-            <div className="flex-shrink-0">
-              <img
-                className="block w-auto h-8 bg-white rounded-full lg:hidden"
-                alt=""
-              />
-              <img
-                className="hidden w-auto h-8 bg-white rounded-full lg:block"
-                alt=""
-              />
+            <div className="relative flex-shrink-0">
+             
+
+            <div className="hidden  md:relative md:block">
+             <Link to="/">
+            
+              <FontAwesomeIcon icon={faNewspaper} className="text-gray-900 fa-2x "/>
+              </Link>
+              </div>
+            
             </div>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex"></div>
@@ -61,18 +70,36 @@ const Navbar = () => {
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <div className="relative ">
               <div className="flex flex-row items-center ">
-                <Link className="mr-6 font-semibold text-black text-md md:text-xl sm:mr-12" to="/">
+                <Link
+                  className="mr-6 font-semibold text-black text-md md:text-xl sm:mr-12"
+                  to="/"
+                >
                   {" "}
                   Home{" "}
                 </Link>
-                <Link className="mr-6 font-semibold text-black text-md md:text-xl sm:mr-12" to="/about">
+                <Link
+                  className="mr-6 font-semibold text-black text-md md:text-xl sm:mr-12"
+                  to="/about"
+                >
                   {" "}
                   About{" "}
                 </Link>
-                <a target="_blank" rel="noopener noreferrer" href="https://ko-fi.com/jseanpatel">
-                  <p className="mr-4 font-semibold text-black sm:mr-2 text-md md:text-xl"> Donate </p>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://ko-fi.com/jseanpatel"
+                >
+                  <p className="mr-4 font-semibold text-black sm:mr-2 text-md md:text-xl">
+                    {" "}
+                    Donate{" "}
+                  </p>
                 </a>
-                <a className="mr-2 sm:mr-4" target="_blank" rel="noopener noreferrer" href="https://ko-fi.com/jseanpatel">
+                <a
+                  className="mr-2 sm:mr-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://ko-fi.com/jseanpatel"
+                >
                   <Icon height="30px" icon={koFi}></Icon>
                 </a>
               </div>
