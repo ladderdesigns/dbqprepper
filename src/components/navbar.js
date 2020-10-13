@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 
-FontAwesomeIcon.autoAddCSS = false
+faNewspaper.autoAddCss = false
 
 library.add(faNewspaper);
 
