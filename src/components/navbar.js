@@ -6,10 +6,10 @@ import koFi from "@iconify/icons-simple-icons/ko-fi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
+
+FontAwesomeIcon.autoAddCSS = false
+
 library.add(faNewspaper);
-
-
-
 
 const Navbar = () => {
   return (
@@ -55,7 +55,7 @@ const Navbar = () => {
             <div className="relative flex-shrink-0">
              
 
-            <div className="hidden  md:relative md:block">
+            <div className="hidden md:relative md:block">
              <Link to="/">
             
               <FontAwesomeIcon icon={faNewspaper} className="text-gray-900 fa-2x "/>
