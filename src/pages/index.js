@@ -118,7 +118,7 @@ function IndexPage() {
         </h2>
         <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-16">
           
-          <div className="pt-8 border-t border-gray-200">
+          <div className="border-t border-gray-200">
             <p className="text-black xl:text-center">
               &copy; Created by{` `}2022{` `}
               <a
