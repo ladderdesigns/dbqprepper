@@ -118,8 +118,8 @@ function IndexPage() {
         </h2>
         <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-16">
           
-          <div className="border-t border-gray-200">
-            <p className="text-black xl:text-center">
+          <div className="text-center border-t border-gray-200">
+            <p className="text-center text-black">
               &copy; Created by{` `}2022{` `}
               <a
                 className="font-bold underline hover:opacity-75"
