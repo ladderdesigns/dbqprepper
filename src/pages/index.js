@@ -122,14 +122,13 @@ function IndexPage() {
            
    <p className="text-center text-black">
             Created by{' '}
-            <Link href="https://ladderdesigns.co">
               <a
                 className="font-bold underline hover:opacity-75"
                 href="https://ladderdesigns.co"
               >
                 Ladder Designs
               </a>
-            </Link>{' '}
+            {' '}
             &copy; {new Date().getFullYear()}. All rights reserved.
           </p>
           </div>
