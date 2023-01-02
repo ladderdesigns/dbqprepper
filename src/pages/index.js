@@ -119,16 +119,19 @@ function IndexPage() {
         <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-16">
           
           <div className="text-center border-t border-gray-200">
-            <p className="text-center text-black">
-              &copy; Created by{` `}2022{` `}
+           
+   <p className="text-center text-black">
+            Created by{' '}
+            <Link href="https://ladderdesigns.co">
               <a
                 className="font-bold underline hover:opacity-75"
                 href="https://ladderdesigns.co"
               >
                 Ladder Designs
               </a>
-              . All rights reserved.
-            </p>
+            </Link>{' '}
+            &copy; {new Date().getFullYear()}. All rights reserved.
+          </p>
           </div>
         </div>
       </footer>
