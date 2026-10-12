@@ -2,7 +2,7 @@
   "name": "dbqprepper",
   "description": "Webtool to help AP students acclimate to the new CollegeBoard COVID-19 testing procedures",
   "version": "4.0.0",
-  "author": "Jacob Patel <https://ladderdesigns.co>",
+  "author": "Jacob Patel <https://ladderdesigns.netlify.app>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",

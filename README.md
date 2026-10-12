@@ -28,7 +28,7 @@ Thank you to all of the student users. A special thank you to the educators who 
 
 ## Deployment
 
-This website can be reached at [dbqprepper.app](https://dbqprepper.app).
+This website can be reached at [dbqprepper.netlify.app](https://dbqprepper.netlify.app).
 
 ## License
 

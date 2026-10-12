@@ -124,7 +124,7 @@ function IndexPage() {
             Created by{' '}
               <a
                 className="font-bold underline hover:opacity-75"
-                href="https://ladderdesigns.co"
+                href="https://ladderdesigns.netlify.app"
               >
                 Ladder Designs
               </a>
